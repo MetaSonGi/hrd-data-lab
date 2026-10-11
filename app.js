@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  const MCP_BASE = 'https://openapi.hrdkorea.or.kr/mcp';
+  const MCP_BASE = 'https://hrd-mcp-proxy.vercel.app/api/proxy?area=';
   const AREAS = {
     qual:     { icon: '🏆', name: '국가기술자격', sub: 'Q-Net 종목·일정·합격률' },
     overseas: { icon: '🌍', name: '해외취업',   sub: '월드잡플러스 채용공고' },
@@ -28,7 +28,7 @@
     let lastErr;
     for (let i = 0; i < retries; i++) {
       try {
-        const res = await fetch(`${MCP_BASE}/${area}`, {
+        const res = await fetch(`${MCP_BASE}${area}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json, text/event-stream' },
           body: JSON.stringify({ jsonrpc: '2.0', id: Date.now() + i, method, params }),

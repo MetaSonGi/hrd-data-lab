@@ -1,9 +1,17 @@
 # HRD 데이터랩 🛰️
 
-한국산업인력공단 MCP 서버(`openapi.hrdkorea.or.kr/mcp`)에 브라우저에서 직접 연결해
+한국산업인력공단 MCP 서버(`openapi.hrdkorea.or.kr/mcp`)의
 국가자격·해외취업·NCS·일학습병행·숙련기술·EPS 데이터를 실시간 조회하는 탐색 사이트.
 
 🌐 **바로 실행:** https://metasongi.github.io/hrd-data-lab/
+
+## 구조
+
+공단 MCP 서버는 브라우저의 preflight(OPTIONS) 요청에 400을 반환해 브라우저 직결이
+불가하므로, Vercel 서버리스 함수(`hrd-mcp-proxy`)가 중계한다.
+
+- 프록시: https://github.com/MetaSonGi/hrd-mcp-proxy
+- 사이트 → `https://hrd-mcp-proxy.vercel.app/api/proxy?area={분야}` → 공단 MCP 서버
 
 ## 기능
 
