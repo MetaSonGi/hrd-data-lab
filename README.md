@@ -1,9 +1,17 @@
-# HRD 데이터랩 🛰️
+# 🛰️ HRD 데이터랩 | HRD Data Lab
+
+> 한국산업인력공단 MCP 실시간 데이터 탐색  
+> Explore Korea HRD public data via MCP in real time
+
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=flat-square)](https://metasongi.github.io/hrd-data-lab/) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square)
+
+🌐 **Live:** https://metasongi.github.io/hrd-data-lab/
+
+---
 
 한국산업인력공단 MCP 서버(`openapi.hrdkorea.or.kr/mcp`)의
 국가자격·해외취업·NCS·일학습병행·숙련기술·EPS 데이터를 실시간 조회하는 탐색 사이트.
 
-🌐 **바로 실행:** https://metasongi.github.io/hrd-data-lab/
 
 ## 구조
 
@@ -35,3 +43,9 @@
 ## 데이터 출처
 
 한국산업인력공단 오픈API MCP 서비스 (https://openapi.hrdkorea.or.kr/mcp.html)
+
+---
+
+## English Summary
+
+Explore Korea HRD public data via MCP in real time.
